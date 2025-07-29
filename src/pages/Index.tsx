@@ -12,14 +12,14 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Icon name="Building2" size={32} className="text-primary" />
-            <span className="text-2xl font-bold text-gray-900">СтройПроект</span>
+            <span className="text-2xl font-bold text-gray-900">Строительная компания</span>
           </div>
           <nav className="hidden md:flex space-x-8">
             <a href="#services" className="text-gray-600 hover:text-primary transition-colors">Услуги</a>
-            <a href="#about" className="text-gray-600 hover:text-primary transition-colors">О нас</a>
+            <a href="#about" className="text-gray-600 hover:text-primary transition-colors">О компании</a>
             <a href="#contact" className="text-gray-600 hover:text-primary transition-colors">Контакты</a>
           </nav>
-          <Button className="hidden md:block">Заказать звонок</Button>
+          <Button className="hidden md:block">Связаться с нами</Button>
         </div>
       </header>
 
@@ -28,34 +28,34 @@ const Index = () => {
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Строим будущее
-              <span className="text-primary block">с надежностью</span>
+              Строительство
+              <span className="text-primary block">будущего</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               Профессиональные строительные услуги полного цикла. 
-              От проектирования до сдачи объекта под ключ.
+              Качественное выполнение работ в установленные сроки.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-lg px-8 py-6">
-                Получить консультацию
+                Получить расчет
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-                Наши проекты
+                Наши работы
               </Button>
             </div>
           </div>
           <div className="relative">
             <img 
               src="/img/2b3c72f7-319a-493e-87ba-d4eb3092ee98.jpg" 
-              alt="Строительство" 
+              alt="Строительные работы" 
               className="rounded-lg shadow-2xl animate-scale-in"
             />
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg">
               <div className="flex items-center space-x-3">
                 <Icon name="CheckCircle" size={24} className="text-green-500" />
                 <div>
-                  <div className="font-semibold text-gray-900">500+</div>
-                  <div className="text-sm text-gray-600">Завершенных проектов</div>
+                  <div className="font-semibold text-gray-900">Опыт работы</div>
+                  <div className="text-sm text-gray-600">Более 10 лет</div>
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Наши услуги</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Полный спектр строительных работ от ведущих специалистов отрасли
+              Комплексные строительные решения от профессиональной команды
             </p>
           </div>
           
@@ -78,31 +78,31 @@ const Index = () => {
               {
                 icon: "Home",
                 title: "Жилое строительство",
-                description: "Строительство частных домов, коттеджей и многоквартирных комплексов"
+                description: "Строительство частных домов и жилых комплексов любой сложности"
               },
               {
                 icon: "Building",
                 title: "Коммерческие объекты",
-                description: "Офисные здания, торговые центры, складские комплексы"
+                description: "Офисные здания, торговые и производственные помещения"
               },
               {
                 icon: "Wrench",
                 title: "Реконструкция",
-                description: "Модернизация и капитальный ремонт существующих зданий"
+                description: "Модернизация и капитальный ремонт зданий и сооружений"
               },
               {
                 icon: "FileText",
                 title: "Проектирование",
-                description: "Архитектурное и инженерное проектирование объектов"
+                description: "Архитектурное проектирование и техническая документация"
               },
               {
                 icon: "HardHat",
                 title: "Отделочные работы",
-                description: "Внутренняя и внешняя отделка любой сложности"
+                description: "Внутренняя и внешняя отделка помещений премиум класса"
               },
               {
                 icon: "Truck",
-                title: "Снабжение материалами",
+                title: "Материалы",
                 description: "Поставка качественных строительных материалов"
               }
             ].map((service, index) => (
@@ -129,10 +129,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {[
-              { number: "15+", label: "Лет опыта" },
-              { number: "500+", label: "Проектов" },
-              { number: "50+", label: "Специалистов" },
-              { number: "100%", label: "Гарантия качества" }
+              { number: "10+", label: "Лет опыта" },
+              { number: "200+", label: "Проектов" },
+              { number: "30+", label: "Специалистов" },
+              { number: "100%", label: "Качество" }
             ].map((stat, index) => (
               <div key={index} className="animate-fade-in">
                 <div className="text-4xl lg:text-5xl font-bold mb-2">{stat.number}</div>
@@ -148,19 +148,19 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-4xl font-bold text-gray-900">Почему выбирают нас</h2>
+              <h2 className="text-4xl font-bold text-gray-900">Наши принципы</h2>
               <p className="text-lg text-gray-600">
-                Мы создаем надежные и современные объекты, которые служат десятилетиями. 
-                Наша команда профессионалов использует передовые технологии и материалы.
+                Мы создаем качественные объекты, которые соответствуют всем современным 
+                стандартам и требованиям. Каждый проект выполняется с особым вниманием к деталям.
               </p>
               
               <div className="space-y-4">
                 {[
-                  "Соблюдение сроков и бюджета",
-                  "Использование качественных материалов",
-                  "Опытная команда специалистов",
-                  "Полное сопровождение проекта",
-                  "Гарантийное обслуживание"
+                  "Строгое соблюдение сроков выполнения",
+                  "Использование современных технологий",
+                  "Контроль качества на каждом этапе",
+                  "Профессиональная команда специалистов",
+                  "Полное сопровождение проекта"
                 ].map((advantage, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <Icon name="CheckCircle" size={20} className="text-green-500" />
@@ -175,13 +175,13 @@ const Index = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-3">
                     <Icon name="Award" size={24} className="text-primary" />
-                    <span>Сертификаты и лицензии</span>
+                    <span>Лицензии и допуски</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Имеем все необходимые разрешения и сертификаты для выполнения 
-                    строительных работ любой сложности.
+                    Имеем все необходимые документы для выполнения 
+                    строительных работ различной категории сложности.
                   </p>
                 </CardContent>
               </Card>
@@ -190,13 +190,13 @@ const Index = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-3">
                     <Icon name="Shield" size={24} className="text-primary" />
-                    <span>Страхование объектов</span>
+                    <span>Гарантии качества</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Все наши объекты застрахованы, что гарантирует защиту 
-                    ваших инвестиций на всех этапах строительства.
+                    Предоставляем расширенную гарантию на все виды 
+                    выполненных работ и используемые материалы.
                   </p>
                 </CardContent>
               </Card>
@@ -211,22 +211,22 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Свяжитесь с нами</h2>
             <p className="text-xl text-gray-600">
-              Готовы обсудить ваш проект? Оставьте заявку и получите консультацию
+              Обсудим ваш проект и предложим оптимальное решение
             </p>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-semibold text-gray-900 mb-6">Контактная информация</h3>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-6">Как с нами связаться</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                       <Icon name="Phone" size={20} className="text-primary" />
                     </div>
                     <div>
-                      <div className="font-medium text-gray-900">+7 (495) 123-45-67</div>
-                      <div className="text-gray-600">Звонок бесплатный</div>
+                      <div className="font-medium text-gray-900">Телефон</div>
+                      <div className="text-gray-600">Звонок в рабочее время</div>
                     </div>
                   </div>
                   
@@ -235,8 +235,8 @@ const Index = () => {
                       <Icon name="Mail" size={20} className="text-primary" />
                     </div>
                     <div>
-                      <div className="font-medium text-gray-900">info@stroyproekt.ru</div>
-                      <div className="text-gray-600">Ответим в течение часа</div>
+                      <div className="font-medium text-gray-900">Электронная почта</div>
+                      <div className="text-gray-600">Ответим в кратчайшие сроки</div>
                     </div>
                   </div>
                   
@@ -245,8 +245,8 @@ const Index = () => {
                       <Icon name="MapPin" size={20} className="text-primary" />
                     </div>
                     <div>
-                      <div className="font-medium text-gray-900">г. Москва, ул. Строительная, д. 15</div>
-                      <div className="text-gray-600">Офис работает с 9:00 до 18:00</div>
+                      <div className="font-medium text-gray-900">Офис</div>
+                      <div className="text-gray-600">Работаем с понедельника по пятницу</div>
                     </div>
                   </div>
                 </div>
@@ -256,20 +256,20 @@ const Index = () => {
             <Card>
               <CardHeader>
                 <CardTitle>Оставить заявку</CardTitle>
-                <CardDescription>Заполните форму и мы свяжемся с вами</CardDescription>
+                <CardDescription>Заполните форму для получения консультации</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">
                   <Input placeholder="Ваше имя" />
-                  <Input placeholder="Телефон" />
+                  <Input placeholder="Контактный телефон" />
                 </div>
-                <Input placeholder="Email" />
-                <Textarea placeholder="Опишите ваш проект" rows={4} />
+                <Input placeholder="Электронная почта" />
+                <Textarea placeholder="Опишите ваши потребности" rows={4} />
                 <Button className="w-full" size="lg">
                   Отправить заявку
                 </Button>
                 <p className="text-sm text-gray-500 text-center">
-                  Нажимая кнопку, вы соглашаетесь с обработкой персональных данных
+                  Отправляя форму, вы соглашаетесь на обработку данных
                 </p>
               </CardContent>
             </Card>
@@ -284,10 +284,10 @@ const Index = () => {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Icon name="Building2" size={24} className="text-primary" />
-                <span className="text-xl font-bold">СтройПроект</span>
+                <span className="text-xl font-bold">Строительная компания</span>
               </div>
               <p className="text-gray-400">
-                Профессиональные строительные услуги с 2009 года
+                Профессиональные строительные услуги высокого качества
               </p>
             </div>
             
@@ -302,27 +302,27 @@ const Index = () => {
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Компания</h4>
+              <h4 className="font-semibold mb-4">Информация</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>О нас</li>
-                <li>Наши проекты</li>
-                <li>Лицензии</li>
-                <li>Карьера</li>
+                <li>О компании</li>
+                <li>Наши работы</li>
+                <li>Документы</li>
+                <li>Вакансии</li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Контакты</h4>
+              <h4 className="font-semibold mb-4">Связь</h4>
               <div className="space-y-2 text-gray-400">
-                <div>+7 (495) 123-45-67</div>
-                <div>info@stroyproekt.ru</div>
-                <div>г. Москва, ул. Строительная, 15</div>
+                <div>Консультации по телефону</div>
+                <div>Электронная почта</div>
+                <div>Офис в центре города</div>
               </div>
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 СтройПроект. Все права защищены.</p>
+            <p>&copy; 2024 Строительная компания. Все права защищены.</p>
           </div>
         </div>
       </footer>
